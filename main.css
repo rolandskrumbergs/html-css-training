@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('fonts/Montserrat-Medium.ttf');
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+    color: white;
+}
+
+nav {
+    background-color: black;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ul {
+    float: right;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    margin: 10px;
+}
+
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar-item {
+    color: white;
+    text-decoration: none;
+}
+
+.green-dot {
+    color: #39B54A;
+}
+
+#intro-section {
+    height: 100%;
+    width: 100%;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/pika-unsplash.jpg') center center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+}
+
+.intro-section-container {
+    width: 60%;
+    padding-left: 75px;
+}
+
+h1 {
+    font-size: 55px;
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #4F5456;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+#hello-section {
+    background-color: #39B54A;
+}
+
+.hello-section-container {
+    padding-top: 75px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 75px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display {
+    font-size: 72px;
+}
+
+.subheading {
+    color: black;
+}
+
+.subheading--green {
+    color: #39B54A;
+}
+
+.welcome-text {
+    color: black;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.display-container {
+    width: 80%;
+    border-bottom: #6BC877 1px solid;
+}
+
+#what-i-do-section {
+    padding-top: 75px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 75px;
+}
+
+.display--black {
+    font-size: 72px;
+    color: black;
+}
+
+.display--white {
+    font-size: 72px;
+    color: white;
+}
+
+.display-2 {
+    font-size: 44px;
+}
+
+.what-i-do-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.work-item__icon>svg {
+    width: 50px;
+    height: 50px;
+    fill: #39B54A;
+}
+
+.work-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 100px;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+
+.work-item__description--title {
+    font-size: 30px;
+    color: black;
+    text-align: left;
+}
+
+.work-item__description--text {
+    color: #878787;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.work-item {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 10px;
+}
+
+.work-item h4 {
+    margin: 0;
+}
+
+footer {
+    background-color: black;
+    padding: 50px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+#contact-form-section {
+    background-color: #1C1C1C;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 100px;
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-bottom: 100px;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    background-color: #151515;
+    margin-top: 100px;
+}
+
+.form-contact-information {
+    background-color: #121212;
+    text-align: left;
+    padding: 50px;
+}
+
+.form-message {
+    text-align: left;
+    padding: 50px;
+}
+
+.form-contact-information h5,
+.form-message h5 {
+    font-size: 16px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.form-contact-information h6 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #39B54A;
+}
+
+.form-contact-information p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #616161;
+}
+
+fieldset {
+    border: 0;
+    padding-left: 0;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    line-height: 48px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    font-size: 16px;
+    font-family: Montserrat;
+    color: white;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border-bottom: 1px solid #39B54A;
+}
+
+.form-field button {
+    margin-top: 40px;
+    width: 100%;
+    background: #39b54a;
+    border: 0;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 60px;
+    font-family: Montserrat;
+}
+
+.form-field button:hover {
+    background: #33a242;
+    ;
+}
