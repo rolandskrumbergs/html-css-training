@@ -292,3 +292,136 @@ fieldset {
     background: #33a242;
     ;
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .intro-section-container {
+        width: 100%;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1 {
+        font-size: 35px;
+
+    }
+
+    .display {
+        font-size: 48px;
+    }
+
+    .contact-form-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form-container {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .display {
+        font-size: 32px;
+    }
+
+    .hello-section-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .welcome-text {
+        font-size: 14px;
+    }
+
+    #what-i-do-section {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .display-2 {
+        font-size: 24px;
+    }
+
+    .work-container {
+        display: block;
+    }
+
+    .work-item {
+        display: block;
+    }
+
+    .work-item__description--title {
+        text-align: center;
+    }
+
+    .work-item__description--text {
+        text-align: center;
+    }
+
+    .contact-form-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .form-container {
+        display: block;
+    }
+
+    .form-message {
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    .form-contact-information {
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+        text-align: center;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(-200px);
+    }
+
+     25% {
+        transform: translateX(-150px);
+    }
+
+    50% {
+        transform: translateX(-100px);
+    }
+
+    75% {
+        transform: translateX(-50px);
+    } 
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+nav ul {
+    animation-name: slidein;
+    animation-duration: 2s;
+}
