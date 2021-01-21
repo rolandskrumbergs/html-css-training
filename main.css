@@ -420,8 +420,3 @@ fieldset {
         transform: translateX(0);
     }
 }
-
-nav ul {
-    animation-name: slidein;
-    animation-duration: 2s;
-}
