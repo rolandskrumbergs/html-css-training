@@ -46,6 +46,20 @@ auto.krasa = "Melna";
 auto["krasa"] = "Melna";
 auto.apstaties();
 
+if (a == b) {
+    alert("Not equal!")
+}
+else {
+    alert("Equal!")
+}
+
+for (i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+while (i > 1) {
+    console.log(i);
+}
 
 
 // Saskaitīšana

@@ -30,9 +30,14 @@ function sendData(name, surname, subject, message) {
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            alert("Paldies, tavs jautājums ir nosūtīts!");
-            // TO DO: šo vajag aizstāt ar feedbacku
+        if (this.readyState == 4) {
+            if (this.status == 200) {
+                alert("Paldies, tavs jautājums ir nosūtīts!");
+                // TO DO: šo vajag aizstāt ar feedbacku
+            }
+            else {
+                alert(this.responseText);
+            }
         }
     };
     xhttp.open("POST", "https://talmacibas-centrs-web.azurewebsites.net/ContactMe", true);
