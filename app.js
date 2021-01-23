@@ -19,6 +19,7 @@ function hideLoading() {
     createCookie('closed-popup', 1, 1);
 }
 
+// Šo var pārnest uz jquery.cookie.js
 function createCookie(name, value, days) {
     var expires;
 
