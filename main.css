@@ -399,7 +399,7 @@ fieldset {
     }
 }
 
-@keyframes slidein {
+/* @keyframes slidein {
     0% {
         transform: translateX(-200px);
     }
@@ -419,4 +419,4 @@ fieldset {
     100% {
         transform: translateX(0);
     }
-}
+} */
