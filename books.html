@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Title</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Rolands Krumbergs">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    </head>
+    <body>
+        <nav>
+            <a href="#" class="navbar-brand">Rolands<span class="green-dot">.</span></a>
+            <ul>
+                <li><a href="#" class="navbar-item">Welcome</a></li>
+                <li><a href="#" class="navbar-item">About</a></li>
+                <li><a href="#" class="navbar-item">What I do</a></li>
+                <li><a href="#" class="navbar-item">Work</a></li>
+                <li><a href="#" class="navbar-item">Contact me</a></li>
+            </ul>
+        </nav>
+
+        <section id="book-section">
+            <div class="book-section-container">
+                <div class="book-example">
+                    <div class="book-title-container">
+                        <h1 id="book1title"></h1>
+                        <h3><span id="book1price"></span> &#8364;</h3>
+                    </div>
+                    <div class="book-checkbox-container">
+                        <input type="checkbox" id="book1" name="book1" value="Book1">
+                    </div>
+                    <div class="book-amount-container">
+                        <input id="book1amount" type="number" min="1" max="5" step="1" value ="1"/>
+                    </div>
+                </div>
+                <div class="book-example">
+                    <div class="book-title-container">
+                        <h1 id="book2title"></h1>
+                        <h3><span id="book2price"></span> &#8364;</h3>
+                    </div>
+                    <div class="book-checkbox-container">
+                        <input type="checkbox" id="book2" name="book2" value="Book2">
+                    </div>
+                    <div class="book-amount-container">
+                        <input id="book2amount" type="number" min="1" max="5" step="1" value ="1"/>
+                    </div>
+                </div>
+                <div class="book-example">
+                    <div class="book-title-container">
+                        <h1 id="book3title"></h1>
+                        <h3><span id="book3price"></span> &#8364;</h3>
+                    </div>
+                    <div class="book-checkbox-container">
+                        <input type="checkbox" id="book3" name="book3" value="Book3">
+                    </div>
+                    <div class="book-amount-container">
+                        <input id="book3amount" type="number" min="1" max="5" step="1" value ="1"/>
+                    </div>
+                </div>
+            </div>
+            <div class="book-section-button-container">
+                <button id="book-section-button">Order</button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+                <p>© Copyright Rolands<span class="green-dot">.</span> 2020</p>
+            </div>
+        </footer>
+
+        <script src="order.js"></script>
+    </body>
+</html>
