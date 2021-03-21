@@ -117,6 +117,8 @@ function sendOrder(event) {
         "book3": book3amount       
     }
 
+    // Try also sending form as form POST and add hidden fields
+
     $.post("https://talmacibas-centrs-web.azurewebsites.net/orders", order)
         .done(function (data) {
             $("#order-form-name").val("");
