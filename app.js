@@ -1,24 +1,3 @@
-$(document).ready(function () {
-
-    $('.popup button').click(hideLoading)
-
-    setTimeout(showLoading, 5000);
-});
-
-function showLoading() {
-    var isSet = readCookie('closed-popup');
-    if (isSet !== "1") {
-        $('.popup').css("visibility", "visible");
-        $('.popup').css("opacity", 1);
-    }
-}
-
-function hideLoading() {
-    $('.popup').css("visibility", "hidden");
-    $('.popup').css("opacity", 0);
-    createCookie('closed-popup', 1, 1);
-}
-
 function createCookie(name, value, days) {
     var expires;
 
