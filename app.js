@@ -17,7 +17,47 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .querySelector('.popup button') // Izvēlamies elementu
         .addEventListener('click', hide); // Pieliekam funkciju, kas izpildīsies ja uz elementa noklikšķina
 
+    document.getElementById('contact-form-button').addEventListener('click', function(event) {
+
+        event.preventDefault();
+    
+        var name = document.getElementById('contact-form-name').value;
+        var surname = document.getElementById('contact-form-surname').value;
+        var subject = document.getElementById('contact-form-subject').value;
+        var message = document.getElementById('contact-form-message').value;
+    
+        sendData(name, surname, subject, message);
+    
+    });
+
 });
+
+function sendData(name, surname, subject, message) {
+    
+    var dataToSend = {
+        "name": name,
+        "email": surname,
+        "subject": subject,
+        "message": message
+    };
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+            if (this.status == 200) {
+                alert("Paldies, tavs jautājums ir nosūtīts!");
+                // TO DO: šo vajag aizstāt ar feedbacku
+            }
+            else {
+                alert(this.responseText);
+            }
+        }
+    };
+    xhttp.open("POST", "https://talmacibas-centrs-web.azurewebsites.net/ContactMe", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send(JSON.stringify(dataToSend));
+}
+
 
 // Funkcija, lai parādītu popup elementu
 function show() {
