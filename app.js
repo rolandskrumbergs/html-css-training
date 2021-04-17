@@ -17,17 +17,51 @@ document.addEventListener("DOMContentLoaded", function(event) {
         .querySelector('.popup button') // Izvēlamies elementu
         .addEventListener('click', hide); // Pieliekam funkciju, kas izpildīsies ja uz elementa noklikšķina
 
-    document.getElementById('contact-form-button').addEventListener('click', function(event) {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
 
         event.preventDefault();
-    
-        var name = document.getElementById('contact-form-name').value;
-        var surname = document.getElementById('contact-form-surname').value;
-        var subject = document.getElementById('contact-form-subject').value;
-        var message = document.getElementById('contact-form-message').value;
-    
-        sendData(name, surname, subject, message);
-    
+
+        var nameElement = document.getElementById('contact-form-name');
+        var surnameElement = document.getElementById('contact-form-surname');
+        var subjectElement = document.getElementById('contact-form-subject');
+        var messageElement = document.getElementById('contact-form-message');
+
+        var formValid = true;
+
+        if (nameElement.value == "") {
+            nameElement.style.border = '1px solid red';
+            formValid = false;
+        }
+        if (surnameElement.value == "") {
+            surnameElement.style.border = '1px solid red';
+            formValid = false;
+        }
+        if (subjectElement.value == "") {
+            subjectElement.style.border = '1px solid red';
+            formValid = false;
+        }
+        if (messageElement.value == "") {
+            messageElement.style.border = '1px solid red';
+            formValid = false;
+        }
+
+        if (formValid) {
+            sendData(nameElement.value, surnameElement.value, subjectElement.value, messageElement.value);
+            nameElement.style.border = '0';
+            nameElement.style.borderBottom = '1px solid rgba(255, 255, 255, 0.07)';
+            nameElement.value = "";
+            surnameElement.style.border = '0';
+            surnameElement.style.borderBottom = '1px solid rgba(255, 255, 255, 0.07)';
+            surnameElement.value = "";
+            subjectElement.style.border = '0';
+            subjectElement.style.borderBottom = '1px solid rgba(255, 255, 255, 0.07)';
+            subjectElement.value = "";
+            messageElement.style.border = '0';
+            messageElement.style.borderBottom = '1px solid rgba(255, 255, 255, 0.07)';
+            messageElement.value = "";
+
+            //window.location.href = "index.html";
+        }
     });
 
 });
@@ -46,7 +80,6 @@ function sendData(name, surname, subject, message) {
         if (this.readyState == 4) {
             if (this.status == 200) {
                 alert("Paldies, tavs jautājums ir nosūtīts!");
-                // TO DO: šo vajag aizstāt ar feedbacku
             }
             else {
                 alert(this.responseText);
