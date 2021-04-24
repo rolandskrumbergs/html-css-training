@@ -70,9 +70,9 @@ function sendOrder(event) {
         "name": name,
         "email": email,
         "billingAddress": billingAddress,
-        "book1": book1amount,
-        "book2": book2amount,
-        "book3": book3amount       
+        "firstBookAmount": book1amount,
+        "secondBookAmount": book2amount,
+        "thirdBookAmount": book3amount       
     }
 
     var xhttp = new XMLHttpRequest();
@@ -90,7 +90,7 @@ function sendOrder(event) {
             }
         }
     };
-    xhttp.open("POST", "https://talmacibas-centrs-web.azurewebsites.net/order", true);
+    xhttp.open("POST", "https://localhost:44375/api/orders", true);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send(JSON.stringify(order));
 }

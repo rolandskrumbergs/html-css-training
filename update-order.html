@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Rolands</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Rolands Krumbergs">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="update-order.css">
+    </head>
+    <body>
+        <nav>
+            <a href="#" class="navbar-brand">Rolands<span class="green-dot">.</span></a>
+            <ul>
+                <li><a href="#" class="navbar-item">Welcome</a></li>
+                <li><a href="#" class="navbar-item">About</a></li>
+                <li><a href="#" class="navbar-item">What I do</a></li>
+                <li><a href="#" class="navbar-item">Work</a></li>
+                <li><a href="#" class="navbar-item">Contact me</a></li>
+            </ul>
+        </nav>
+
+        <section id="update-order-section">
+            <div class="update-order-section-container">
+                <h1 class="display-2 display--white">Manage order</h1>
+                <form id="update-order-form">
+                    <fieldset>
+                        <div class="form-field">
+                            <label for="order-form-name">Name</label>
+                            <input id="order-form-name" name="order-form-name" type="text" placeholder="Name">
+                        </div>
+                        <div class="form-field">
+                            <label for="order-form-email">Email</label>
+                            <input id="order-form-email" name="order-form-email" type="email" placeholder="Email">
+                        </div>
+                        <div class="form-field">
+                            <label for="order-form-address">Billing address</label>
+                            <input id="order-form-address" name="order-form-addres" type="text" placeholder="Billing address">
+                        </div>
+                        <div class="form-field">
+                            <label for="order-form-book-1-amount">Book 1 amount</label>
+                            <input id="order-form-book-1-amount" name="order-form-book-1-amount" type="number" placeholder="Book 1 amount" min="0">
+                        </div>
+                        <div class="form-field">
+                            <label for="order-form-book-2-amount">Book 2 amount</label>
+                            <input id="order-form-book-2-amount" name="order-form-book-2-amount" type="number" placeholder="Book 2 amount" min="0">
+                        </div>
+                        <div class="form-field">
+                            <label for="order-form-book-3-amount">Book 3 amount</label>
+                            <input id="order-form-book-3-amount" name="order-form-book-3-amount" type="number" placeholder="Book 3 amount" min="0">
+                        </div>
+                        <div class="form-field checkbox-form-field">
+                            <input type="checkbox" id="order-form-priority" name="order-form-priority" value="Priority">
+                            <label for="order-form-priority">Set as priority</label>
+                        </div>
+                        <div class="form-field">
+                            <label for="order-form-book-3-amount">Status</label>
+                            <select id="order-form-status" name="order-form-status">
+                                <option value="new">New</option>
+                                <option value="work-in-progress">Work in progress</option>
+                                <option value="ready">Ready</option>
+                                <option value="sent">Sent</option>
+                                <option value="done">Done</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <button id="order-form-button"></button>
+                        </div>
+                    </fieldset>
+                </form>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+                <p>© Copyright Rolands<span class="green-dot">.</span> 2020</p>
+            </div>
+        </footer>
+
+        <script src="update-order.js"></script>
+
+    </body>
+</html>

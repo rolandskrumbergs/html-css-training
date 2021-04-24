@@ -86,7 +86,7 @@ function sendData(name, surname, subject, message) {
             }
         }
     };
-    xhttp.open("POST", "https://talmacibas-centrs-web.azurewebsites.net/ContactMe", true);
+    xhttp.open("POST", "https://localhost:44375/api/contactrequests", true);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send(JSON.stringify(dataToSend));
 }

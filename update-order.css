@@ -1,0 +1,54 @@
+#update-order-section {
+    min-height: 100%;
+    width: 100%;
+    background-color: #151515;
+    padding-top: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+}
+
+.form-field input, .form-field select {
+    width: 100%;
+    line-height: 1.8rem;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    font-size: 16px;
+    font-family: Montserrat;
+    color: white;
+    margin-bottom: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+.form-field input[type='checkbox'] {
+    width: auto;
+    margin: 0;
+    margin-right: 1rem;
+    height: 20px;
+    width: 20px;
+}
+
+.form-field label {
+    font-size: small;
+    color: #39b54a;
+}
+
+.checkbox-form-field {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.checkbox-form-field label {
+    font-size: medium;
+    color: white;
+}
+
+select option {
+    background-color: #151515;
+}
